@@ -1,0 +1,13 @@
+%h1 Showing User
+%hr/
+
+- if notice
+  .notice= notice
+ 
+%p
+  %b Email:
+  = @user.email
+
+.actions
+  = link_to 'Edit', edit_user_path(@user)
+  = link_to 'Back', users_path

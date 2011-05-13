@@ -1,0 +1,20 @@
+common: &common
+  adapter: postgresql
+  username: postgres
+  password: password # from psql setup, see Postgresql
+
+development:
+  <<: *common
+  database: wildcountrytech_development
+
+test:
+  <<: *common
+  database: wildcountrytech_test
+
+staging:
+  <<: *common
+  database: wildcountrytech_production
+    
+production:
+  <<: *common
+  database: wildcountrytech_production
