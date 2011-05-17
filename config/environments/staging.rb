@@ -10,6 +10,7 @@ Wildcountrytech::Application.configure do
 
   # Enable Rails's static asset server for heroku
   config.serve_static_assets = true
+  config.static_cache_control = "public, max-age=#{1.year.to_i}"
 
   # Compress both stylesheets and JavaScripts
   config.assets.js_compressor  = :uglifier
