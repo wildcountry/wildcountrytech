@@ -5,10 +5,10 @@
     = stylesheet_link_tag 'application'
     
     -# Compass stylesheets
-    = stylesheet_link_tag '/stylesheets/compass/screen.css', :media => 'screen, projection'
-    = stylesheet_link_tag '/stylesheets/compass/print.css', :media => 'print'
+    = stylesheet_link_tag '/compass/screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag '/compass/print.css', :media => 'print'
     /[if IE]
-      = stylesheet_link_tag '/stylesheets/compass/ie.css', :media => 'screen, projection'
+      = stylesheet_link_tag '/compass/ie.css', :media => 'screen, projection'
       
     = javascript_include_tag 'application'
     = javascript_include_tag 'admin'

@@ -26,6 +26,12 @@
     @include button-colors;
     @include button-active-colors;
     @include button-hover-colors;
+  }
+  input, .button {
+    @include button-button;
+  }
+  a { 
+    @include anchor-button;
     div {
       text-indent: 18px;
       display: block;
@@ -33,12 +39,6 @@
       &.refresh { @include icon-sprite(arrow-circle-double); }
       &.new-user { @include icon-sprite(user--plus); }
     }
-  }
-  input, .button {
-    @include button-button;
-  }
-  a { 
-    @include anchor-button;
   }
 }
 
