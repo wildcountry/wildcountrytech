@@ -7,6 +7,8 @@ http_path = "/"
 
 sass_dir = 'app/assets/compass'
 css_dir   = 'tmp/compass'
+images_dir = 'public/compass_images'
+http_images_path = '/compass_images'
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
