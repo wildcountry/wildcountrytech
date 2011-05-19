@@ -6,7 +6,7 @@ project_type = :rails
 http_path = "/"
 
 sass_dir = 'app/assets/compass'
-css_dir = 'public/stylesheets/compass'
+css_dir   = 'tmp/stylesheets'
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
