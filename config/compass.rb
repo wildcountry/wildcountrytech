@@ -10,6 +10,13 @@ css_dir   = 'tmp/stylesheets/compass'
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
+output_style = 
+  begin
+    Rails.env.development? ? :expanded : :compressed
+  rescue NameError
+    # Running outside of Rails (e.g. 'compass watch'), therefore assume Development env
+    :expanded
+  end
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true

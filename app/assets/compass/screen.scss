@@ -13,6 +13,9 @@
 // Import the buttons plugin
 @import "blueprint/buttons";
 
+@import "compass/utilities/sprites";
+@import "icon/{user--plus,arrow-circle-double}*.png";
+
 // Generate the blueprint framework according to your configuration:
 @include blueprint;
 
@@ -23,6 +26,13 @@
     @include button-colors;
     @include button-active-colors;
     @include button-hover-colors;
+    div {
+      text-indent: 18px;
+      display: block;
+      
+      &.refresh { @include icon-sprite(arrow-circle-double); }
+      &.new-user { @include icon-sprite(user--plus); }
+    }
   }
   input, .button {
     @include button-button;
