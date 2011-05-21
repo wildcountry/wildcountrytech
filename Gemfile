@@ -29,7 +29,7 @@ group :development do
   # gem 'ruby-debug19', :require => 'ruby-debug'
   
   # Use unicorn as the web server
-  gem 'unicorn'
+  # gem 'unicorn'
 
   # Deploy with Capistrano
   # gem 'capistrano'
