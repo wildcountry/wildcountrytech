@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.0.rc1'
 # Bundle edge Rails instead:
-#gem 'rails',     :git => 'git://github.com/rails/rails.git'
+# gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 # Asset template engines
 gem 'sass'
@@ -23,15 +23,7 @@ group :development, :test do
 end
 
 group :development do
-  # To use debugger
-  # gem 'ruby-debug19', :require => 'ruby-debug'
-  
-  # Use unicorn as the web server
-  # gem 'unicorn'
-
-  # Deploy with Capistrano
-  # gem 'capistrano'
-  
+  gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'rb-fsevent', :require => false
   gem 'guard'
   gem 'guard-livereload'
