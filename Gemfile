@@ -27,6 +27,7 @@ group :development do
   gem 'rb-fsevent', :require => false
   gem 'guard'
   gem 'guard-livereload'
+  gem 'unicorn'
 end
 
 group :test do
