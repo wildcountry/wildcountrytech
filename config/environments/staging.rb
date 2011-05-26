@@ -50,4 +50,7 @@ Wildcountrytech::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  # See everything in the log (default is :info)
+  config.log_level = :debug
 end
