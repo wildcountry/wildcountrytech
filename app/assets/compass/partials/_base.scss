@@ -1,10 +1,25 @@
-// Here is where you can define your constants for your application and to configure the blueprint framework.
-// Feel free to delete these if you want keep the defaults:
+// This file must be imported before loading html5-boilerplate
 
-$blueprint-grid-columns: 24;
-$blueprint-grid-width: 30px;
-$blueprint-grid-margin: 10px;
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
 
-// If you change your grid column dimensions
-// you can make a new grid background image from the command line like this:
-// compass grid-img 30+10x16
+$base-font-family: 'Pacifico', arial, unquote('sans-serif');  // default font-family
+
+$base-font-size: 30px;  // default font-size for YUI fonts
+
+$base-line-height: 1.231;  // default line-height for YUI fonts
+
+$font-color: #444;
+
+$link-color: #607890;
+
+$link-hover-color: #036;
+
+$link-active-color: #607890;
+
+$link-visited-color: #607890;
+
+$selected-font-color: #fff;  // color for selected text
+
+$selected-background-color: #ff5E99;  // bg-color for selected text
+
+$list-left-margin: 2em;  // left margin for ul an ol

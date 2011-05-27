@@ -6,5 +6,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require console_log
 //= require_tree ./common
 //= require_tree ./application
