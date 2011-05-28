@@ -37,9 +37,6 @@ div.field, div.actions {
   }
 }
 
-// Import the buttons plugin
-@import "blueprint/buttons";
-
 .actions { 
   a, input, button, .button { 
     @include button-colors;
@@ -55,6 +52,10 @@ div.field, div.actions {
     div {
       text-indent: 18px;
       display: block;
+      
+      // TODO - use sprite images instead (Once Compass gem has been updated to Rails 3.1)
+      &.refresh { background: image-url('icon/arrow-circle-double.png') no-repeat; }
+      &.new-user { background: image-url('icon/user--plus.png') no-repeat;  }
     }
   }
 }

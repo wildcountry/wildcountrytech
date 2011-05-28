@@ -1,5 +1,19 @@
 @import "compass/css3";
 
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+// Import the non-default scaffolding module.
+@import "blueprint/scaffolding";
+
+// Import the buttons plugin
+@import "blueprint/buttons";
+
+// Generate the blueprint framework according to your configuration:
+@include blueprint;
+
+@include blueprint-scaffolding;
+
 //-----------------------------------------------
 // The following html5-boilerplate styles should
 // probably be customized for each site
@@ -48,10 +62,16 @@ input:invalid, textarea:invalid {
 
 body {}
 
-#container {}
+#container {
+  margin-left:auto;
+  margin-right:auto;
+  width: 90%;
+}
 
 header {}
 
 #main {}
 
-footer {}
+footer {
+  text-align: right;
+}
