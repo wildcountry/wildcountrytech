@@ -13,10 +13,11 @@ gem 'coffee-script'
 gem 'uglifier'
 
 gem 'haml'
-gem 'compass'
 gem 'jquery-rails'
 gem 'pg', :require => 'pg'
-gem 'html5-boilerplate'
+
+gem 'compass', :require => false
+gem 'html5-boilerplate', :require => false
 
 group :production, :staging do
   gem 'therubyracer-heroku', '0.8.1.pre3'

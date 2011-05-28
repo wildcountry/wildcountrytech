@@ -4,4 +4,5 @@ db/*.sqlite3
 log/*.log
 tmp/
 .sass-cache/
-public/stylesheets
+sass/
+public/stylesheets/
