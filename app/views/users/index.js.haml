@@ -1,3 +1,4 @@
 :coffee
-  title = $('h1').html().replace(/\ \(.*$/, '')
-  $('h1').html(title+" (#{l Time.now})")
+  el = $('header h1')
+  title = el.html().replace(/\ \(.*$/, '')
+  el.html(title+" (#{l Time.now})")
