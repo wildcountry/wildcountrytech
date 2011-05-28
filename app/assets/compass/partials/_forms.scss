@@ -45,6 +45,7 @@ div.field, div.actions {
     @include button-colors;
     @include button-active-colors;
     @include button-hover-colors;
+    @include border-radius;
   }
   input, .button {
     @include button-button;
