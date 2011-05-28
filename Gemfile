@@ -16,8 +16,8 @@ gem 'haml'
 gem 'jquery-rails'
 gem 'pg', :require => 'pg'
 
-gem 'compass', :require => false
-gem 'html5-boilerplate', :require => false
+gem 'compass'
+gem 'html5-boilerplate'
 
 group :production, :staging do
   gem 'therubyracer-heroku', '0.8.1.pre3'
