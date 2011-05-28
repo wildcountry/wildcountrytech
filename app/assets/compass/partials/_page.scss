@@ -1,19 +1,5 @@
 @import "compass/css3";
 
-// Import all the default blueprint modules so that we can access their mixins.
-@import "blueprint";
-
-// Import the non-default scaffolding module.
-@import "blueprint/scaffolding";
-
-// Import the buttons plugin
-@import "blueprint/buttons";
-
-// Generate the blueprint framework according to your configuration:
-@include blueprint;
-
-@include blueprint-scaffolding;
-
 //-----------------------------------------------
 // The following html5-boilerplate styles should
 // probably be customized for each site
@@ -21,8 +7,7 @@
 
 body, select, input, textarea {
   color: $font-color;
-  // Set your base font here, to apply evenly
-  // font-family: Georgia, serif;
+  font-family: $base-font-family;
 }
 
 //Headers (h1, h2, etc) have no default font-size or margin; define those yourself
