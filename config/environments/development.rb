@@ -24,5 +24,7 @@ Wildcountrytech::Application.configure do
   
   # See everything in the log (default is :info)
   config.log_level = :debug
+  
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
 

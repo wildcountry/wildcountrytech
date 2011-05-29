@@ -19,6 +19,8 @@ gem 'pg', :require => 'pg'
 gem 'compass'
 gem 'html5-boilerplate'
 
+gem 'refinerycms'
+
 group :production, :staging do
   gem 'therubyracer-heroku', '0.8.1.pre3'
 end
