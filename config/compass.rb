@@ -5,7 +5,8 @@ project_type = :rails
 # Set this to the root of your project when deployed:
 http_path = "/"
 
-sass_dir = 'app/assets/compass'
+# Set sass_dir to a 'dummy' path, as we aren't using compass to compile scss 
+sass_dir = 'dummy_dir'
 css_dir   = 'tmp/compass'
 images_dir = 'public/compass_images'
 http_images_path = '/compass_images'

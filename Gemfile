@@ -19,7 +19,7 @@ gem 'pg', :require => 'pg'
 gem 'compass'
 gem 'html5-boilerplate'
 
-#gem 'refinerycms'
+#gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => 'master'
 
 group :production, :staging do
   gem 'therubyracer-heroku', '0.8.1.pre3'
