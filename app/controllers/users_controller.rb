@@ -40,7 +40,7 @@ class UsersController < ApplicationController
   # PUT /users/1.json
   def update
     @user = User.find(params[:id])
-    flash[:notice] = 'User was successfully created.' if @user.update_attributes(params[:user])
+    flash[:notice] = 'User was successfully updated.' if @user.update_attributes(params[:user])
     respond_with @user
   end
 
@@ -49,7 +49,7 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     @user.destroy
-    flash[:notice] = 'User was successfully deleted.'
+    flash[:notice] = 'User was successfully destroyed.'
     respond_with @user
   end
 end
