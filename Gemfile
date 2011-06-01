@@ -5,11 +5,12 @@ gem 'rails', '3.1.0.rc1'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 # Until rake 0.9.0 works with Rails 3.1, use rake v0.8.7
-gem 'rake', '~> 0.8.7'
+#gem 'rake', '~> 0.8.7'
 
 # Asset template engines
 gem 'sass'
 gem 'coffee-script'
+gem 'therubyracer', '~> 0.9.0beta5', :require => 'v8'
 gem 'uglifier'
 
 gem 'haml'
@@ -21,17 +22,7 @@ gem 'oily_png'  # Improves speed of chunky_png, for faster compass sprite file g
 gem 'html5-boilerplate'
 gem 'thin'
 
-gem 'therubyracer', '~> 0.9.0beta5', :require => 'v8'
-  
 #gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => 'master'
-
-group :production, :staging do
-  #gem 'therubyracer-heroku', '0.8.1.pre3'
-end
-
-group :development, :test do
-  #gem 'therubyracer', '~> 0.9.0beta5', :require => 'v8'
-end
 
 group :development do
   gem 'ruby-debug19', :require => 'ruby-debug'
