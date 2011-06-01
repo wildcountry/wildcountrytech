@@ -16,16 +16,16 @@ gem 'pg'
 gem 'compass'
 gem 'oily_png'  # Improves speed of chunky_png, for faster compass sprite file generation
 gem 'html5-boilerplate'
-gem 'thin'
+#gem 'thin'
 
 #gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => 'master'
 
 group :development do
-  gem 'ruby-debug19', :require => 'ruby-debug'
+  #gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'rb-fsevent', :require => false
   gem 'guard'
   gem 'guard-livereload'
-  gem 'foreman'  # Used to start thin webserver (via Procfile). To execute use: "foreman start -p 3000"
+  #gem 'foreman'  # Used to start thin webserver (via Procfile). To execute use: "foreman start -p 3000"
 end
 
 group :test do
