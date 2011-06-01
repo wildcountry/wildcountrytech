@@ -116,6 +116,7 @@ GEM
     term-ansicolor (1.0.5)
     therubyracer (0.9.0beta5)
       libv8 (~> 3.3.10)
+    therubyracer-heroku (0.8.1.pre3)
     thin (1.2.11)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -149,6 +150,7 @@ DEPENDENCIES
   rb-fsevent
   sass
   therubyracer (~> 0.9.0beta5)
+  therubyracer-heroku (= 0.8.1.pre3)
   thin
   turn
   uglifier
