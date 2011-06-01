@@ -21,14 +21,16 @@ gem 'oily_png'  # Improves speed of chunky_png, for faster compass sprite file g
 gem 'html5-boilerplate'
 gem 'thin'
 
+gem 'therubyracer', '~> 0.9.0beta5', :require => 'v8'
+  
 #gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => 'master'
 
 group :production, :staging do
-  gem 'therubyracer-heroku', '0.8.1.pre3'
+  #gem 'therubyracer-heroku', '0.8.1.pre3'
 end
 
 group :development, :test do
-  gem 'therubyracer', '~> 0.9.0beta4', :require => 'v8'
+  #gem 'therubyracer', '~> 0.9.0beta5', :require => 'v8'
 end
 
 group :development do
