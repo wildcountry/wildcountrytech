@@ -5,12 +5,12 @@
  *= require_self
  
  // Currently, need to specify all dependancy (i.e. all SCSS imports), until fixed in Rails 3.1 / Sprockets / SASS
- * depend_on "partials/_base"
- * depend_on "partials/_overrides"
- * depend_on "partials/_fonts"
- * depend_on "partials/_page"
- * depend_on "partials/_forms"  
- * depend_on "partials/_media"
+ depend_on "partials/_base"
+ depend_on "partials/_overrides"
+ depend_on "partials/_fonts"
+ depend_on "partials/_page"
+ depend_on "partials/_forms"  
+ depend_on "partials/_media"
 */
 
 // Here's where we define some default constants
