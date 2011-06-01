@@ -4,9 +4,6 @@ gem 'rails', '3.1.0.rc1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-# Until rake 0.9.0 works with Rails 3.1, use rake v0.8.7
-#gem 'rake', '~> 0.8.7'
-
 # Asset template engines
 gem 'sass'
 gem 'coffee-script'
@@ -15,8 +12,7 @@ gem 'uglifier'
 
 gem 'haml'
 gem 'jquery-rails'
-gem 'pg', :require => 'pg'
-
+gem 'pg'
 gem 'compass'
 gem 'oily_png'  # Improves speed of chunky_png, for faster compass sprite file generation
 gem 'html5-boilerplate'
