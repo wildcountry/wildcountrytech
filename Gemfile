@@ -24,7 +24,7 @@ group :production, :staging do
 end
 
 group :development, :test do
-  gem 'therubyracer', '~> 0.9.0beta5', :require => 'v8'
+  gem 'therubyracer', '~> 0.9.0beta7', :require => 'v8'
 end
 
 group :development do
