@@ -37,7 +37,6 @@ module Wildcountrytech
     # JavaScript files you want as :defaults (application.js is always included).
     # config.action_view.javascript_expansions[:defaults] = %w(prototype prototype_ujs)
 
-
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
@@ -49,5 +48,12 @@ module Wildcountrytech
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    
+    # Use the dalli memcached client
+    config.cache_store = :dalli_store
+    
+    # Use Dalli as the rack-cache metastore
+    $cache = Dalli::Client.new
+    config.middleware.use ::Rack::Cache, :metastore => $cache, :entitystore => 'file:tmp/cache/entity'
   end
 end
