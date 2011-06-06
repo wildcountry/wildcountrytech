@@ -53,7 +53,7 @@ module Wildcountrytech
     config.cache_store = :dalli_store
     
     # Use Dalli as the rack-cache metastore
-    $cache = Dalli::Client.new
-    config.middleware.use ::Rack::Cache, :metastore => $cache, :entitystore => 'file:tmp/cache/entity'
+    # $cache = Dalli::Client.new
+    # config.middleware.use ::Rack::Cache, :metastore => $cache, :entitystore => 'file:tmp/cache/entity'
   end
 end
