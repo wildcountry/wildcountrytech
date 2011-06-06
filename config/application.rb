@@ -51,9 +51,5 @@ module Wildcountrytech
     
     # Use the dalli memcached client
     config.cache_store = :dalli_store
-    
-    # Use Dalli as the rack-cache metastore
-    # $cache = Dalli::Client.new
-    # config.middleware.use ::Rack::Cache, :metastore => $cache, :entitystore => 'file:tmp/cache/entity'
   end
 end
