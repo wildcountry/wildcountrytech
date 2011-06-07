@@ -17,7 +17,6 @@ gem 'oily_png'  # Improves speed of chunky_png, for faster compass sprite file g
 gem 'html5-boilerplate'
 gem 'unicorn'
 gem 'dalli'
-gem 'rack-cache', :require => 'rack/cache'
 
 #gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => 'master'
 
