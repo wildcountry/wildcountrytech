@@ -54,9 +54,7 @@ module Wildcountrytech
     
     # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
     # These can be precompiled by using commands such as:
-    #       bundle exec rake assets:precompile
-    #       or
-    #       heroku run rake assets:precompile --app wildcountrytech
+    #   bundle exec rake assets:precompile
     config.assets.precompile += %w( head.js )
   end
 end
