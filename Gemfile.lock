@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:wildcountrytech/coffee-filter.git
+  remote: git://github.com/wildcountrytech/coffee-filter.git
   revision: bf7d5b48434690980e3609c527c387e12f84ee09
   specs:
     coffee-filter (0.1.1.1)

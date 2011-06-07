@@ -7,7 +7,7 @@ gem 'rails', '3.1.0.rc1'
 # Asset template engines
 gem 'sass'
 gem 'coffee-script'
-gem 'coffee-filter', :git => 'git@github.com:wildcountrytech/coffee-filter.git'
+gem 'coffee-filter', :git => 'git://github.com/wildcountrytech/coffee-filter.git'
 gem 'uglifier'
 
 gem 'haml'
