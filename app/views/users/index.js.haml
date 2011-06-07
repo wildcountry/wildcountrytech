@@ -2,3 +2,4 @@
   el = $('header h1')
   title = el.html().replace(/\ \(.*$/, '')
   el.html(title+" (#{l Time.now})")
+  el.effect("highlight", {}, 3000);

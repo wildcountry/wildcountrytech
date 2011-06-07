@@ -11,5 +11,11 @@
     = f.label :email
     %br/
     = f.text_field :email, :class => 'title'
+    
+    = text_field_tag :date, '', :class => 'datepicker'
   .actions
     = f.submit
+
+- content_for :javascripts do
+  :coffeescript
+    $('.datepicker').datepicker();
