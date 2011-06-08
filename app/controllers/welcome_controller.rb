@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   
   def index
-    # TODO
+    render :layout => false
   end
 end
