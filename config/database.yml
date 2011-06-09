@@ -1,20 +1,21 @@
-common: &common
+common: &SHARED
   adapter: postgresql
+  encoding: utf8
   username: postgres
-  password: password # from psql setup, see Postgresql
-
+  password: password
+  
 development:
-  <<: *common
+  <<: *SHARED
   database: wildcountrytech_development
 
 test:
-  <<: *common
+  <<: *SHARED
   database: wildcountrytech_test
 
 staging:
-  <<: *common
+  <<: *SHARED
   database: wildcountrytech_staging
     
 production:
-  <<: *common
+  <<: *SHARED
   database: wildcountrytech_production
