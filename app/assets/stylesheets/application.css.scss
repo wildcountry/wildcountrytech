@@ -4,13 +4,6 @@
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
  *= require jquery-ui
- 
- *= depend_on "partials/_base"
- *= depend_on "partials/_overrides"
- *= depend_on "partials/_fonts"
- *= depend_on "partials/_page"
- *= depend_on "partials/_forms"  
- *= depend_on "partials/_media"
 */
 
 // Here's where we define some default constants
