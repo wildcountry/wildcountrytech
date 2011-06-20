@@ -14,10 +14,12 @@ gem 'haml'
 gem 'jquery-rails'
 gem 'pjax-rails'
 
-gem 'pg'
 gem 'compass'
 gem 'oily_png'  # Improves speed of chunky_png, for faster compass sprite file generation
 gem 'html5-boilerplate'
+gem 'compass-960-plugin'
+
+gem 'pg'
 gem 'unicorn'
 gem 'dalli'
 

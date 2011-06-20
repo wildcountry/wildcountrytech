@@ -1,9 +1,21 @@
 @import "compass/css3";
+@import "compass/utilities/general/min";
 
 //-----------------------------------------------
 // The following html5-boilerplate styles should
 // probably be customized for each site
 //-----------------------------------------------
+
+@mixin box($bg) {
+  padding: 0.5em 0;
+  background: $bg;
+  color: invert($bg);
+  @include border-radius;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  @include font-size(20px); 
+}
 
 body, select, input, textarea {
   color: $font-color;
@@ -45,18 +57,82 @@ input:invalid, textarea:invalid {
 // Add your own custom styles below
 //-----------------------------------
 
-body {}
-
-#container {
-  margin-left:auto;
-  margin-right:auto;
-  width: 90%;
+body {
+  background: darkgrey;
 }
 
-header {}
+@import "960/grid";
+$ninesixty_columns: 12;
+$ninesixty_grid_width: 1024px;
+$ninesixty-gutter-width: 20px;
 
-#main {}
+#page {
+  @include grid_container;
+}
+
+#page, header, footer, #main {
+  @include micro-clearfix;
+}
+
+header {
+  @include grid-prefix(1);
+  ul li {
+    @include grid(2);
+    @include box(#DC143C);
+    
+    margin-top: 30px;
+    &.logo {
+      @include box(#233232);
+      margin-top: 10px;
+      padding: 30px 0;
+    }
+  }
+}
+
+#main {
+  background: #fff;
+  padding: 20px 0;
+  .carousel {
+    .arrow {
+      @include grid(1);
+      @include box(#228B22);
+      color: white;
+      margin-top: 10%;
+    }
+    
+    .project {
+      @include grid(10);
+      @include box(#FAFAD2);
+      height: 200px;
+    }
+  }
+  
+  .boxes {
+    @include grid-prefix(1);
+    @include grid-suffix(1);
+    .intro {
+      @include grid(5);
+      @include box(red);
+      height: 200px;
+    }
+    .contact {
+      @include grid(5);
+      @include box(#FFA07A);
+      height: 200px;
+    }
+  }
+}
 
 footer {
-  text-align: right;
+  .copyright {
+    @include grid(4);
+    @include alpha;
+    @include box(#C71585);
+  }
+  .contact {
+    @include grid(4);
+    @include grid_push(4);
+    @include omega;
+    @include box(#C71585);
+  }
 }

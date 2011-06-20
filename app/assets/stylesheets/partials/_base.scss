@@ -1,42 +1,15 @@
 // This file must be imported before loading html5-boilerplate
+
 @import url(http://fonts.googleapis.com/css?family=Nunito);
 
 $base-font-family: 'Nunito', arial, unquote('sans-serif');  // default font-family
-
 $base-font-size: 13px;  // default font-size for YUI fonts
-
 $base-line-height: 1.231;  // default line-height for YUI fonts
-
 $font-color: #444;
-
 $link-color: #607890;
-
 $link-hover-color: #036;
-
 $link-active-color: #607890;
-
 $link-visited-color: #607890;
-
 $selected-font-color: #fff;  // color for selected text
-
 $selected-background-color: #ff5E99;  // bg-color for selected text
-
 $list-left-margin: 2em;  // left margin for ul an ol
-
-$blueprint-font-family: $base-font-family;
-$blueprint-button-font-family: $base-font-family;
-$blueprint-font-size: $base-font-size;
-
-// Import all the default blueprint modules so that we can access their mixins.
-@import "blueprint";
-
-// Import the non-default scaffolding module.
-@import "blueprint/scaffolding";
-
-// Import the buttons plugin
-@import "blueprint/buttons";
-
-// Generate the blueprint framework according to your configuration:
-@include blueprint;
-
-@include blueprint-scaffolding;
