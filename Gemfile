@@ -30,7 +30,7 @@ group :production, :staging do
 end
 
 group :development, :test do
-  gem 'therubyracer', '~> 0.9.0', :require => 'v8'
+  gem 'therubyracer', :require => 'v8'
 end
 
 group :development do
