@@ -57,13 +57,11 @@ input:invalid, textarea:invalid {
 // Add your own custom styles below
 //-----------------------------------
 
-body {
-  background: darkgrey;
-}
+body { }
 
 @import "960/grid";
 $ninesixty_columns: 12;
-$ninesixty_grid_width: 1024px;
+$ninesixty_grid_width: 960px;
 $ninesixty-gutter-width: 20px;
 
 #page {
@@ -75,11 +73,10 @@ $ninesixty-gutter-width: 20px;
 }
 
 header {
-  @include grid-prefix(1);
-  ul li {
+  nav ul li {
     @include grid(2);
+    @include grid-push(1);
     @include box(#DC143C);
-    
     margin-top: 30px;
     &.logo {
       @include box(#233232);
@@ -89,9 +86,7 @@ header {
   }
 }
 
-#main {
-  background: #fff;
-  padding: 20px 0;
+div[role='main'] {
   .carousel {
     .arrow {
       @include grid(1);
@@ -108,31 +103,27 @@ header {
   }
   
   .boxes {
-    @include grid-prefix(1);
-    @include grid-suffix(1);
     .intro {
       @include grid(5);
+      @include grid-push(1);
       @include box(red);
-      height: 200px;
     }
     .contact {
+      @include grid-push(1);
       @include grid(5);
       @include box(#FFA07A);
-      height: 200px;
     }
   }
 }
 
 footer {
   .copyright {
-    @include grid(4);
-    @include alpha;
     @include box(#C71585);
+    @include grid(4,12);
   }
   .contact {
-    @include grid(4);
-    @include grid_push(4);
-    @include omega;
     @include box(#C71585);
+    @include grid(4);
+    @include grid-push(4,12);
   }
 }
