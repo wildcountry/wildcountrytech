@@ -35,6 +35,7 @@ end
 
 group :development do
   ##gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'logging'
   gem 'rb-fsevent', :require => false
   gem 'guard'
   gem 'guard-livereload'

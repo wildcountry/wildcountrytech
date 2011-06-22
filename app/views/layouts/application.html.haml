@@ -5,15 +5,16 @@
   
   %body{ :class => "#{controller.controller_name}" }
     #page
-      %header
+      %header#header
         = render "layouts/application/header"
         
       #main{ :role => 'main' }
         = render "layouts/application/flashes"
         = yield
-        
-      %footer
-        = render "layouts/application/footer"
-        
+      
+      #sticky-footer
+
+    %footer= render "layouts/application/footer"
+                
     -# Javascript at the bottom for fast page loading
     = render "layouts/application/javascripts"
