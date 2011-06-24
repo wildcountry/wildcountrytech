@@ -29,6 +29,9 @@ Wildcountrytech::Application.configure do
   # See everything in the log (default is :info)
   config.log_level = :debug
   
+  # Do not compress assets
+  config.assets.compress = false
+  
   Logging.init :debug, :info, :warn, :error, :fatal
   layout = Logging::Layouts::Pattern.new(:pattern => "%.1l, [%d #rails] %5l -- : %m\n", :date_pattern => '%Y-%m-%dT%H:%M:%S.%6N')
   

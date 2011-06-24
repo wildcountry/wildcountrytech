@@ -7,7 +7,7 @@ gem 'sprockets', '2.0.0.beta.10'  # locking to beta.10, as beta.11 breaks assets
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 # Asset template engines
-gem 'sass'
+gem 'sass-rails', "~> 3.1.0.rc"
 gem 'coffee-script'
 gem 'coffee-filter', :git => 'git://github.com/wildcountrytech/coffee-filter.git'
 gem 'uglifier'
