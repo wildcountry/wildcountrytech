@@ -7,7 +7,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require pjax
 //= require console_log
 //= require_tree ./common
 //= require_tree ./application
+
+// require pjax

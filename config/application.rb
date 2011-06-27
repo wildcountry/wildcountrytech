@@ -56,5 +56,6 @@ module Wildcountrytech
     # These can be precompiled by using commands such as:
     #   bundle exec rake assets:precompile
     config.assets.precompile += %w( head.js )
+    
   end
 end

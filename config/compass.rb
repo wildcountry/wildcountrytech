@@ -20,8 +20,12 @@ output_style =
     # Running outside of Rails (e.g. 'compass watch'), therefore assume Development env
     :expanded
   end
-
-require 'html5-boilerplate'
+  
+add_import_path "#{Rails.root}/app/assets/stylesheets"
+add_import_path "#{Rails.root}/app/assets/images"
+add_import_path "#{Rails.root}/vendor/assets/stylesheets"
+add_import_path "#{Rails.root}/vendor/assets/images"
+add_import_path "#{Gem.loaded_specs['compass-960-plugin'].full_gem_path}/stylesheets"
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
