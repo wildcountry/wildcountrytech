@@ -1,8 +1,9 @@
 // This file must be imported before loading html5-boilerplate
 
-@import url(http://fonts.googleapis.com/css?family=Indie+Flower&v1);
+//@import url(http://fonts.googleapis.com/css?family=Indie+Flower&v1);
+@import 'fonts';
 
-$base-font-family: 'Indie Flower', arial, unquote('sans-serif');  // default font-family
+$base-font-family: 'Nevis', arial, unquote('sans-serif');  // default font-family
 $base-font-size: 30px;  // default font-size for YUI fonts
 $base-line-height: 1.231;  // default line-height for YUI fonts
 $font-color: #444;

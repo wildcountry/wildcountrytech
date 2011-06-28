@@ -1,19 +1,3 @@
-/*
- * This is a manifest file that'll automatically include all the stylesheets available in this directory
- * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
- * the top of the compiled file, but it's generally better to create a new file per style scope.
-
- ** Not required with latest compass and sass-rails gems:
- depend_on partials/_base
- depend_on partials/_forms
- depend_on partials/_media
- depend_on partials/_overrides
- depend_on partials/_page
- require jquery-ui
-*/
-
-@import 'jquery-ui';
-
 // Here's where we define some default constants
 @import "partials/base"; 
 
@@ -42,3 +26,5 @@
 
 // Media should come last
 @import "partials/media";
+
+@import 'jquery-ui';
