@@ -44,7 +44,7 @@ group :development do
   gem 'rb-fsevent', :require => false
   gem 'guard'
   gem 'guard-livereload'
-  gem 'foreman'  # Used to start thin webserver (via Procfile). To execute use: "foreman start -p 3000"
+  #gem 'foreman'  # Used to start thin webserver (via Procfile). To execute use: "foreman start -p 3000"
 end
 
 group :test do
