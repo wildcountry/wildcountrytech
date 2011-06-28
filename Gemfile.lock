@@ -1,13 +1,5 @@
 GIT
-  remote: git://github.com/wildcountrytech/coffee-filter.git
-  revision: bf7d5b48434690980e3609c527c387e12f84ee09
-  specs:
-    coffee-filter (0.1.1.1)
-      coffee-script (>= 2.2.0)
-      haml (>= 3.0.18)
-
-GIT
-  remote: https://github.com/chriseppstein/compass.git
+  remote: git://github.com/chriseppstein/compass.git
   revision: 2124003550bf96e828f6e63351d44a61b647cbf1
   branch: rails31
   specs:
@@ -17,7 +9,7 @@ GIT
       sass (~> 3.1)
 
 GIT
-  remote: https://github.com/rails/sass-rails.git
+  remote: git://github.com/rails/sass-rails.git
   revision: eee12e2e0bbfca56d458c82df47213e130ef5830
   specs:
     sass-rails (3.1.0.rc.3)
@@ -25,6 +17,14 @@ GIT
       railties (~> 3.1.0.rc1)
       sass (>= 3.1.3)
       sprockets (>= 2.0.0.beta.9)
+
+GIT
+  remote: git://github.com/wildcountrytech/coffee-filter.git
+  revision: bf7d5b48434690980e3609c527c387e12f84ee09
+  specs:
+    coffee-filter (0.1.1.1)
+      coffee-script (>= 2.2.0)
+      haml (>= 3.0.18)
 
 GEM
   remote: http://rubygems.org/

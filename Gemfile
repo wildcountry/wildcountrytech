@@ -17,8 +17,8 @@ gem 'pjax-rails'
 # gem 'compass'
 # gem 'sass-rails', "~> 3.1.0.rc"
 
-gem 'sass-rails', :git => 'https://github.com/rails/sass-rails.git'
-gem 'compass', :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
+gem 'sass-rails', :git => 'git://github.com/rails/sass-rails.git'
+gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 'rails31'
 
 gem 'oily_png'  # Improves speed of chunky_png, for faster compass sprite file generation
 gem 'html5-boilerplate'
@@ -44,7 +44,7 @@ group :development do
   gem 'rb-fsevent', :require => false
   gem 'guard'
   gem 'guard-livereload'
-  #gem 'foreman'  # Used to start thin webserver (via Procfile). To execute use: "foreman start -p 3000"
+  gem 'foreman'  # Used to start thin webserver (via Procfile). To execute use: "foreman start -p 3000"
 end
 
 group :test do
