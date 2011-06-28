@@ -28,3 +28,6 @@
 @import "partials/media";
 
 @import 'jquery-ui';
+.ui-widget { font-family: $base-font-family; font-size: $base-font-size; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: $base-font-family; font-size: $base-font-size; }
+
