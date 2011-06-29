@@ -12,7 +12,7 @@ gem 'uglifier'
 
 gem 'haml'
 gem 'jquery-rails'
-gem 'pjax-rails'
+#gem 'pjax-rails'
 
 # gem 'compass'
 # gem 'sass-rails', "~> 3.1.0.rc"
@@ -20,7 +20,7 @@ gem 'pjax-rails'
 gem 'sass-rails', :git => 'git://github.com/rails/sass-rails.git'
 gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 'rails31'
 
-gem 'oily_png'  # Improves speed of chunky_png, for faster compass sprite file generation
+#gem 'oily_png'  # Improves speed of chunky_png, for faster compass sprite file generation
 gem 'html5-boilerplate'
 gem 'compass-960-plugin'
 
