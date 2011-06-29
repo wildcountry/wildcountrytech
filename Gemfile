@@ -27,6 +27,7 @@ gem 'compass-960-plugin'
 gem 'pg'
 gem 'unicorn'
 gem 'dalli'
+gem 'redcarpet'
 
 #gem 'refinerycms', :git => 'git://github.com/resolve/refinerycms.git', :branch => 'master'
 

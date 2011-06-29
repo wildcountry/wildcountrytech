@@ -1,5 +1,13 @@
 Wildcountrytech::Application.routes.draw do
   resources :users
+  
+  # Use a Rack app to produce markdown preview (for speed)
+  # Usage: http://localhost:3000/markdown_to_html?markdown=this%20is%20**bold**%20text
+  # Can be a GET or POST request
+  match '/markdown_to_html' => proc { |env|
+    str = Rack::Request.new(env).params['markdown'] || ''
+    [200, {"Content-Type" => 'text/html'}, [Redcarpet.new(str).to_html]] 
+  }
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
