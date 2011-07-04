@@ -1,14 +1,14 @@
 !!! 5
-- ie_html :class => 'no-js', :lang => 'en' do
+- ie_html class: 'no-js', lang: 'en' do
   %head
-    = render "layouts/application/head", :stylesheet_partial => "layouts/application/stylesheets"
+    = render "layouts/application/head", stylesheet_partial: "layouts/application/stylesheets"
   
-  %body{ :class => "#{controller.controller_name}" }
+  %body{ class: "#{controller.controller_name}" }
     #page
       %header#header
         = render "layouts/application/header"
         
-      #main{ :role => 'main' }
+      #main{ role: 'main' }
         = render "layouts/application/flashes"
         = yield
       
