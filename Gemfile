@@ -1,16 +1,21 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc5'
+gem 'rails', '3.1.0.rc6'
 
 # Bundle edge Rails instead:
 # gem 'rails',     git: 'git://github.com/rails/rails.git'
 
 # Asset template engines
-gem 'sass-rails', "~> 3.1.0.rc"
-gem 'coffee-script'
-gem 'coffee-filter', git: 'git://github.com/wildcountry/coffee-filter.git'
-gem 'uglifier'
+gem 'bundler', '~> 1.1.pre'
 
+# Asset template engines
+group :assets do
+  gem 'sass-rails', '~> 3.1.0.rc'
+  gem 'coffee-rails', '~> 3.1.0.rc'
+  gem 'uglifier'
+end
+
+gem 'coffee-filter', git: 'git://github.com/wildcountry/coffee-filter.git'
 gem 'haml'
 gem 'jquery-rails'
 #gem 'pjax-rails'
@@ -29,13 +34,13 @@ gem 'redcarpet'
 
 #gem 'refinerycms', git: 'git://github.com/resolve/refinerycms.git', branch: 'master'
 
-group :production, :staging do
-  gem 'therubyracer-heroku', '0.8.1.pre3'
-end
+# group :production, :staging do
+#   gem 'therubyracer-heroku', '0.8.1.pre3'
+# end
 
-group :development, :test do
-  gem 'therubyracer', require: 'v8'
-end
+# group :development, :test do
+#   gem 'therubyracer', require: 'v8'
+# end
 
 group :development do
   ##gem 'ruby-debug19', require: 'ruby-debug'
